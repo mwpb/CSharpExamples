@@ -1,4 +1,5 @@
-﻿using System;
+﻿// https://www.microsoft.com/net/tutorials/csharp/getting-started
+using System;
 
 namespace ConsoleApplication
 {
@@ -6,7 +7,9 @@ namespace ConsoleApplication
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            var name = "Matthew";
+            var surname = "Burke";
+            Console.WriteLine($"Hello {name} {surname}.");
         }
     }
 }
