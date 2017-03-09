@@ -10,8 +10,8 @@ namespace ConsoleApplication
             var stringTutorial = new Tutorials.StringTutorial();
             var dateTutorial = new Tutorials.DateTutorial();
             var decisionTutorial = new Tutorials.Decisions();
-            var userGuess = Console.ReadLine();
-            decisionTutorial.Guess(int.Parse(userGuess));
+            var logicTutorial = new Tutorials.LogicTutorial();
+            logicTutorial.countToTwentyFour();
             Console.ReadLine();
         }
     }
