@@ -11,7 +11,9 @@ namespace ConsoleApplication
             var dateTutorial = new Tutorials.DateTutorial();
             var decisionTutorial = new Tutorials.Decisions();
             var logicTutorial = new Tutorials.LogicTutorial();
-            logicTutorial.countToTwentyFour();
+            var arrayTutorial = new Tutorials.TutorialArrays();
+            var methodTutorial = new Tutorials.TutorialMethods();
+            Console.WriteLine(methodTutorial.calcArea(5,4));
             Console.ReadLine();
         }
     }
