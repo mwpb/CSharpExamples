@@ -41,7 +41,6 @@ namespace Tutorials
         // lambda expressions
         public Func<int, int> addOne = (x => x+1);
         public Func<int, int, int> calcArea = ((x, y) => x * y);
-        //halfway through extension methods
 
     }
 }

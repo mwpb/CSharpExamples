@@ -1,5 +1,6 @@
 ﻿// https://www.microsoft.com/net/tutorials/csharp/getting-started
 using System;
+using Extensions;
 
 namespace ConsoleApplication
 {
@@ -13,6 +14,8 @@ namespace ConsoleApplication
             var logicTutorial = new Tutorials.LogicTutorial();
             var arrayTutorial = new Tutorials.TutorialArrays();
             var methodTutorial = new Tutorials.TutorialMethods();
+            int five = 5;
+            five.PlusFive();
             Console.WriteLine(methodTutorial.calcArea(5,4));
             Console.ReadLine();
         }
