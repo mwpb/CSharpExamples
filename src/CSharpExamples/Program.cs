@@ -14,9 +14,8 @@ namespace ConsoleApplication
             var logicTutorial = new Tutorials.LogicTutorial();
             var arrayTutorial = new Tutorials.TutorialArrays();
             var methodTutorial = new Tutorials.TutorialMethods();
-            int five = 5;
-            five.PlusFive();
-            Console.WriteLine(methodTutorial.calcArea(5,4));
+            var classTutorial = new Tutorials.TutorialClasses();
+            classTutorial.printPerimeters();
             Console.ReadLine();
         }
     }

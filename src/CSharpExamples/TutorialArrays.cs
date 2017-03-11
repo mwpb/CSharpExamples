@@ -80,7 +80,7 @@ namespace Tutorials
                 }
                 else
                 {
-                    Console.WriteLine("Invlaid Command");
+                    Console.WriteLine("Invalid Command");
                 }
             }
         }
