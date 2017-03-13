@@ -64,6 +64,52 @@ namespace Tutorials
             public Address ShippingAddress { get; set; }
         }
 
+        public void printAddress(Address address)
+        {
+            Console.WriteLine(address.StreetAddress);
+            Console.WriteLine(address.City);
+            Console.WriteLine(address.State);
+            Console.WriteLine(address.Country);
+            Console.WriteLine(address.PostalCode);
+        }
+
+        public void printCustomers()
+        {
+            Person john = new Person(new DateTime(1980,10,10));
+            john.FirstName = "John";
+            john.LastName = "Doe";
+            john.ShippingAddress = new Address();
+            john.ShippingAddress.StreetAddress = "123 Main Street";
+            john.ShippingAddress.City = "Sometown, OH, 12345";
+            john.ShippingAddress.Country = "United States";
+            Person jane = new Person(new DateTime(1980, 10, 11));
+            jane.FirstName = "Jane";
+            jane.LastName = "Doe";
+            jane.ShippingAddress = new Address();
+            jane.ShippingAddress.StreetAddress = "123 Main Street";
+            jane.ShippingAddress.City = "Sometown, OH, 12345";
+            jane.ShippingAddress.Country = "United States";
+            Company acme = new Company();
+            acme.Name = "Acme, Inc.";
+            acme.ShippingAddress = new Address();
+            acme.ShippingAddress.StreetAddress = "123 Main Street";
+            acme.ShippingAddress.City = "Sometown, OH, 12345";
+            acme.ShippingAddress.Country = "United States";
+            List<Person> personList = new List<Person> { john, jane };
+            List<Company> companyList = new List<Company> { acme};
+            foreach (var person in personList)
+            {
+                Console.WriteLine($"{person.FirstName} {person.LastName}");
+                printAddress(person.ShippingAddress);
+            }
+            foreach (var company in companyList)
+            {
+                Console.WriteLine($"{company.Name}");
+                printAddress(company.ShippingAddress);
+            }
+
+        }
+
         // inheritance 
         // one cannot make instances of abstract classes
         // 

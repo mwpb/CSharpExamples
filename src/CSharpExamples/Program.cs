@@ -15,7 +15,9 @@ namespace ConsoleApplication
             var arrayTutorial = new Tutorials.TutorialArrays();
             var methodTutorial = new Tutorials.TutorialMethods();
             var classTutorial = new Tutorials.TutorialClasses();
-            classTutorial.printPerimeters();
+            var accessTutorial = new Tutorials.TutorialAccess();
+            var course1 = accessTutorial.createCourse();
+            course1.printStudents();
             Console.ReadLine();
         }
     }
